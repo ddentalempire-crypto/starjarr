@@ -1,0 +1,266 @@
+const TRANSLATIONS = {
+    "ar": {
+        "nav_home": "الرئيسية",
+        "nav_menu": "تجربة البوفيه",
+        "nav_reservations": "الحجوزات",
+        "nav_order": "اطلب أونلاين",
+        "nav_about": "قصتنا",
+        "nav_contact": "اتصل بنا",
+        "hero_title": "تجربة بوفيه عالمي فاخرة طوال اليوم",
+        "hero_subtitle": "عالم من النكهات العالمية والبوفيهات الفاخرة في قلب الكويت - فندق كراون بلازا",
+        "book_now": "احجز طاولتك الآن",
+        "hero_cta_order": "اطلب توصيل",
+        "meal_breakfast": "إفطار",
+        "meal_lunch": "غداء",
+        "meal_dinner": "عشاء",
+        "meal_brunch": "برنش",
+        "feature_terrace": "جلسات داخلية + تراس",
+        "feature_family": "مناسب للعائلات",
+        "buffet_experience": "تجربة بوفيه عالمية",
+        "cat_international": "🌍 مطبخ عالمي",
+        "cat_japanese": "🍣 ياباني",
+        "cat_middle_eastern": "🥘 شرق أوسطي",
+        "cat_seafood": "🐟 مأكولات بحرية",
+        "cat_salads": "🥗 سلطات",
+        "cat_desserts": "🍰 حلويات",
+        "cat_live_cooking": "🔥 محطات طهي مباشرة",
+        "res_title": "احجز طاولتك الآن",
+        "res_name": "الاسم الكامل",
+        "res_guests": "عدد الأشخاص",
+        "res_date": "التاريخ والوقت",
+        "res_occasion": "المناسبة",
+        "res_occ_family": "عائلة",
+        "res_occ_birthday": "عيد ميلاد",
+        "res_occ_event": "مناسبة خاصة",
+        "res_button": "تأكيد الحجز",
+        "order_title": "اطلب أونلاين",
+        "order_delivery": "خدمة التوصيل",
+        "order_no_contact": "توصيل بدون تلامس",
+        "order_takeout": "استلام (Takeaway)",
+        "order_onsite": "خدمات الموقع (On-site)",
+        "order_dine_in": "عشاء داخل المطعم",
+        "about_us_title": "لماذا يحبنا الناس؟",
+        "about_us_text": "التنوع، الجودة، والخدمة الفاخرة. نقدم تجربة بوفيه لا تُنسى في أجواء فندقية راقية.",
+        "srv_title": "الخدمات والمميزات",
+        "srv_wifi": "واي فاي مجاني",
+        "srv_kids": "كراسي أطفال",
+        "srv_accessible": "مهيأ لذوي الإعاقة",
+        "srv_bar": "ركن المشروبات",
+        "srv_outdoor": "جلسات خارجية",
+        "srv_family": "خصوصية للعائلات",
+        "rev_title": "آراء عملائنا",
+        "contact_info": "تواصل معنا",
+        "address": "طريق المطار، محافظة الفروانية، الكويت - فندق كراون بلازا الثريا سيتي",
+        "phone": "+965 2474 2000 / +965 9696 1300",
+        "opening_hours": "الإفطار: 6:00 ص - 10:30 ص | الغداء: 12:30 م - 3:30 م | العشاء: 7:00 م - 11:00 م",
+        "footer_call": "اتصل الآن",
+        "footer_maps": "افتح في Google Maps",
+        "rev_1_text": "\"أفضل بوفيه دولي في الكويت، تنوع رهيب في الأكل وطاقم العمل ودود للغاية. ينصح به بشدة للعائلات.\"",
+        "rev_1_author": "- أحمد الشمري",
+        "rev_2_text": "\"أفضل بوفيه إفطار في الكويت بلا منازع! إطلالة المسبح رائعة والأجواء مريحة جداً.\"",
+        "rev_2_author": "- سارة جاسم",
+        "rev_3_text": "\"ليلة المأكولات البحرية كانت مذهلة. كل طبق كان طازجاً ولذيذًا. ضيافة كراون بلازا في أبهى صورها.\"",
+        "rev_3_author": "- محمد العتيبي",
+        "rev_4_text": "\"أعشق محطات الطهي المباشر، المعكرونة والمشاوي مستواها عالمي وتُحضر أمامك.\"",
+        "rev_4_author": "- فهد الكندري",
+        "rev_5_text": "\"مكان نظيف وأنيق ومثالي لغداء العمل. قسم الحلويات عبارة عن حلم!\"",
+        "rev_5_author": "- ليلى محمود",
+        "popup_title": "خصم 20% اليوم!",
+        "popup_text": "احصل على خصم حصري عند الحجز المسبق عبر الموقع",
+        "popup_btn": "احصل على الخصم",
+        "price_breakfast": "إفطار: 5 د.ك",
+        "price_dinner": "عشاء: عروض خاصة",
+        "price_offers": "عروض المجموعات"
+    },
+    "en": {
+        "nav_home": "Home",
+        "nav_menu": "Buffet Experience",
+        "nav_reservations": "Reservations",
+        "nav_order": "Order Online",
+        "nav_about": "Our Story",
+        "nav_contact": "Contact",
+        "hero_title": "Premium All-Day International Buffet Experience",
+        "hero_subtitle": "A world of international flavors and luxury buffets in the heart of Kuwait - Crowne Plaza Hotel",
+        "book_now": "Book Now",
+        "hero_cta_order": "Order Delivery",
+        "meal_breakfast": "Breakfast",
+        "meal_lunch": "Lunch",
+        "meal_dinner": "Dinner",
+        "meal_brunch": "Brunch",
+        "feature_terrace": "Indoor + Terrace",
+        "feature_family": "Family Friendly",
+        "buffet_experience": "Global Buffet Experience",
+        "cat_international": "🌍 International Cuisine",
+        "cat_japanese": "🍣 Japanese",
+        "cat_middle_eastern": "🥘 Middle Eastern",
+        "cat_seafood": "🐟 Seafood",
+        "cat_salads": "🥗 Salads",
+        "cat_desserts": "🍰 Desserts",
+        "cat_live_cooking": "🔥 Live Cooking Stations",
+        "res_title": "Reserve Your Table",
+        "res_name": "Full Name",
+        "res_guests": "Number of Guests",
+        "res_date": "Date & Time",
+        "res_occasion": "Occasion",
+        "res_occ_family": "Family",
+        "res_occ_birthday": "Birthday",
+        "res_occ_event": "Special Event",
+        "res_button": "Confirm Reservation",
+        "order_title": "Order Online",
+        "order_delivery": "Delivery",
+        "order_no_contact": "No-contact Delivery",
+        "order_takeout": "Takeaway",
+        "order_onsite": "On-site Services",
+        "order_dine_in": "Dine-in",
+        "about_us_title": "Why People Love Us?",
+        "about_us_text": "Variety, quality, and premium service. We provide an unforgettable buffet experience in a sophisticated hotel atmosphere.",
+        "srv_title": "Services & Amenities",
+        "srv_wifi": "Free Wi-Fi",
+        "srv_kids": "Baby Chairs",
+        "srv_accessible": "Accessible",
+        "srv_bar": "Refreshment Bar",
+        "srv_outdoor": "Outdoor Seating",
+        "srv_family": "Family Areas",
+        "rev_title": "Customer Reviews",
+        "contact_info": "Contact Us",
+        "address": "Airport Road, Farwaniya Governorate, Kuwait - Crowne Plaza Al Thuraya City Hotel",
+        "phone": "+965 2474 2000 / +965 9696 1300",
+        "opening_hours": "Breakfast: 6 AM - 10:30 AM | Lunch: 12:30 PM - 3:30 PM | Dinner: 7 PM - 11 PM",
+        "footer_call": "Call Now",
+        "footer_maps": "Open in Google Maps",
+        "rev_1_text": "\"Best international buffet in Kuwait, amazing variety and very friendly staff. Highly recommended for families.\"",
+        "rev_1_author": "- Ahmed Al-Shammari",
+        "rev_2_text": "\"The best breakfast buffet in Kuwait! The pool view is amazing and the atmosphere is very relaxing.\"",
+        "rev_2_author": "- Sarah Jassim",
+        "rev_3_text": "\"Seafood night was incredible. Every dish was fresh and delicious. Crowne Plaza hospitality at its best.\"",
+        "rev_3_author": "- Mohammed Al-Otaibi",
+        "rev_4_text": "\"I love the live cooking stations, the pastas and grilled meats are world-class and prepared right in front of you.\"",
+        "rev_4_author": "- Fahad Al-Kandari",
+        "rev_5_text": "\"Clean, elegant, and perfect for business lunches. The dessert section is a dream!\"",
+        "rev_5_author": "- Layla Mahmoud",
+        "popup_title": "20% OFF Today!",
+        "popup_text": "Get an exclusive discount when you book through our website",
+        "popup_btn": "Claim Discount",
+        "price_breakfast": "Breakfast: 5 KD",
+        "price_dinner": "Dinner: Special Offers",
+        "price_offers": "Group Offers"
+    }
+};
+
+function initApp() {
+    const langSwitchBtn = document.getElementById('lang-switch');
+    const resForm = document.getElementById('res-form');
+    const popup = document.getElementById('promo-popup');
+    const closePopup = document.querySelector('.close-popup');
+    const header = document.querySelector('header');
+    
+    let currentLang = 'ar';
+
+    // Update Content with Translations
+    function updateContent(lang) {
+        document.body.className = `lang-${lang}`;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
+                if (el.tagName === 'INPUT' && el.placeholder) {
+                    el.placeholder = TRANSLATIONS[lang][key];
+                } else if (el.innerText !== undefined) {
+                    el.innerText = TRANSLATIONS[lang][key];
+                }
+            }
+        });
+
+        langSwitchBtn.innerText = lang === 'ar' ? 'English' : 'العربية';
+    }
+
+    langSwitchBtn.addEventListener('click', () => {
+        currentLang = currentLang === 'ar' ? 'en' : 'ar';
+        updateContent(currentLang);
+        // Refresh animations if needed
+    });
+
+    // Scroll Effects
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Reveal Animations on Scroll
+    const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const revealObserver = new IntersectionObserver(revealCallback, {
+        threshold: 0.15
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
+    });
+
+    // Reviews Carousel Logic
+    function initReviewsCarousel() {
+        const slides = document.querySelectorAll('.review-slide');
+        if (slides.length === 0) return;
+        
+        let currentSlide = 0;
+        
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 6000);
+    }
+
+    // Popup Logic - Launch after 5 seconds
+    setTimeout(() => {
+        if (popup) {
+            popup.style.display = 'flex';
+            popup.style.opacity = '0';
+            popup.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => popup.style.opacity = '1', 10);
+        }
+    }, 5000);
+
+    if (closePopup) {
+        closePopup.addEventListener('click', () => {
+            popup.style.opacity = '0';
+            setTimeout(() => popup.style.display = 'none', 500);
+        });
+    }
+
+    // Reservation Form Handling
+    if (resForm) {
+        resForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const guests = document.getElementById('guests').value;
+            const date = document.getElementById('date').value;
+            
+            const msg = currentLang === 'ar' 
+                ? `شكراً ${name}! تم استلام طلب الحجز لـ ${guests} أشخاص بتاريخ ${date}. سنتواصل معك قريباً.` 
+                : `Thank you ${name}! Your reservation for ${guests} people on ${date} has been received. We will contact you soon.`;
+            
+            alert(msg);
+            resForm.reset();
+        });
+    }
+
+    // Initial load
+    updateContent(currentLang);
+    initReviewsCarousel();
+}
+
+document.addEventListener('DOMContentLoaded', initApp);
